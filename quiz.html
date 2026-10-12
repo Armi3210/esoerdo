@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Kvíz szekció – demó oldal</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/quiz.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="text-center">Esőerdők</h1>
+    </header>
+    <main>
+        <section class="kviz" id="kviz">
+            <div class="kviz__box">
+
+                <div data-screen="start">
+                    <h2 class="kviz__title" data-title></h2>
+                    <p data-desc></p>
+                    <button class="kviz__btn" data-start style="margin-top:0">Kvíz indítása</button>
+                </div>
+
+                <div data-screen="game" hidden>
+                    <div class="kviz__top"><span data-counter></span><span data-live></span></div>
+                    <div class="kviz__bar"><i data-progress></i></div>
+                    <h3 class="kviz__q" data-question></h3>
+                    <div class="kviz__answers" data-answers></div>
+                    <div class="kviz__explain" data-explain hidden></div>
+                    <button class="kviz__btn" data-next disabled>Következő kérdés</button>
+                </div>
+
+                <div data-screen="result" hidden>
+                    <h2 class="kviz__title">Kész!</h2>
+                    <div class="kviz__score" data-final></div>
+                    <p data-msg></p>
+                    <button class="kviz__btn" data-restart style="margin-top:0">Újrakezdés</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/quiz.js"></script>
+</body>
+
+</html>
