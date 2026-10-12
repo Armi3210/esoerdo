@@ -49,6 +49,16 @@ footer {
     min-height: 50px;
 }
 
+#carouselExampleControls {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+#carouselExampleControls .carousel-item img {
+    height: 350px;
+    object-fit: cover;
+}
+
 @media (max-width: 767.98px) {
     header {
         min-height: 450px;
