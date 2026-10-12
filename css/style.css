@@ -9,13 +9,20 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
-    padding: 300px 0px 300px 0px;
+    height: 650px;
 }
 h1{
+    padding: 100px 0px 0px 0px;
     font-size: 80px;
 
 }
+.navbar{
+    justify-content: space-around;
 
+}
+.navbar a{
+    color: #fff;
+}
 
 footer {
     position: absolute;
