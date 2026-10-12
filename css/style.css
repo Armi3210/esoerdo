@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Average+Sans&family=Bitcount+Ink:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-image: url(/images/wp12478603-rainforest-4k-wallpapers.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 300px 0px 300px 0px;
+}
+h1{
+    font-size: 80px;
+
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #000;
+    width: 100%;
+}
