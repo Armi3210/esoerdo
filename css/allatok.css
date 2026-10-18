@@ -5,7 +5,35 @@
 }
 
 body {
-  
     font-family: "Roboto", sans-serif;
     background-color: rgb(6, 44, 6);
+    color: #fff;
+}
+
+nav {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.allatkartya img {
+    height: 250px;
+    border-radius: 15px;
+}
+
+.allatkartya p {
+    text-align: justify;
+}
+
+.allatkartya {
+    padding: 10px;
+    border: 2px solid rgb(129, 173, 9);
+    border-radius: 15px;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .allatkartya img {
+        display: block;
+        margin: auto;
+    }
 }
