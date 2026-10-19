@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Average+Sans&family=Bitcount+Ink:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Viaoda+Libre&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  
+    font-family: "Viaoda Libre", serif;
+    background-color: rgb(6, 44, 6);
+}
+
+header {
+    background-image: url("../images/wp12478603-rainforest-4k-wallpapers.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    min-height: 650px;
+}
+
+h1 {
+    padding: 200px 10px 0;
+    font-size: 80px;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navbar a {
+    color: #fff;
+}
+
+.navbar a:hover {
+    color: #ccc;
+}
