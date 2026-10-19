@@ -6,10 +6,11 @@ body {
 
 header {
     background-image: url(/images/wp12478603-rainforest-4k-wallpapers.webp);
-    background-repeat: no-repeat;
+   background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     color: #fff;
-    padding: 300px 0px 300px 0px;
+    min-height: 650px;
 }
 h1{
     font-size: 80px;

@@ -1,7 +1,7 @@
 (function () {
   
   const QUIZ = {
-    title: "Általános műveltségi kvíz",
+    title: "Esőerdő kvíz",
     description: "10 kérdés az esőerdőkről, kérdésenként egy helyes válasz. Sok sikert!",
     shuffleQuestions: true,
     shuffleAnswers: true,
