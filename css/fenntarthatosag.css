@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Average+Sans&family=Bitcount+Ink:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(6, 44, 6);
+}
+
+header {
+    background-image: url("../images/wp12478603-rainforest-4k-wallpapers.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    min-height: 650px;
+}
+
+h1 {
+    padding: 200px 10px 0;
+    font-size: 80px;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navbar a {
+    color: #fff;
+}
+
+.navbar a:hover {
+    color: #ccc;
+}
+
+footer {
+    background-color: #000;
+    width: 100%;
+    min-height: 50px;
+}
+
+#carouselExampleControls {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+#carouselExampleControls .carousel-item img {
+    height: 350px;
+    object-fit: cover;
+}
+
+@media (max-width: 767.98px) {
+    header {
+        min-height: 450px;
+    }
+
+    h1 {
+        padding-top: 80px;
+        font-size: 42px;
+    }
+
+    .navbar .navbar-collapse {
+        padding: 10px 0;
+    }
+    .navbar{
+        background-color: #000;
+    }
+}
+
+main{
+    color: #fff;
+}
+
+.fontos{
+    border: #ff0000 3px solid;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+.fontosresz{
+    display: inline-block;
+}
+
+.felkialtojel{
+    font-size: 100px;
+    color: #ff0000;
+}
+
+.fontosszoveg{
+    font-size: 18px;
+}
