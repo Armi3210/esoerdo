@@ -1,49 +1,151 @@
-@import url('https://fonts.googleapis.com/css2?family=Average+Sans&family=Bitcount+Ink:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Viaoda+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
-body {
-    font-family: "Viaoda Libre", serif;
-    background-color: rgb(6, 44, 6);
-    color: #fff; 
-    font-size: 20px;
+html {
+    scroll-behavior: smooth;
 }
 
+body {
+    margin: 0;
+    font-family: "Viaoda Libre", serif;
+    background-color: rgb(6, 44, 6);
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+
 header {
-    background-image: url("../images/wp12478603-rainforest-4k-wallpapers.webp");
+    background-image:
+        linear-gradient(rgba(0, 25, 0, 0.35), rgba(0, 25, 0, 0.55)),
+        url("../images/wp12478603-rainforest-4k-wallpapers.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    color: #fff; 
-    min-height: 650px;
-}
-
-h1 {
-    padding: 200px 10px 0;
-    font-size: 80px;
+    color: #fff;
+    min-height: 600px;
 }
 
 .navbar {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 15px 4%;
 }
 
 .navbar a {
     color: #fff;
+    transition: color 0.3s ease;
 }
 
-.navbar a:hover {
-    color: #ccc;
+.navbar a:hover,
+.navbar a:focus {
+    color: #b9e6a5;
 }
 
-p img{
-    width: 500px;
-    border-radius: 15px;
+.navbar .nav-link.active {
+    color: #b9e6a5;
 }
 
-.hol-van{
-    width: 85%;
+header h1 {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 180px 20px 80px;
+    font-size: clamp(38px, 6vw, 80px);
+    line-height: 1.25;
+    text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.8);
+}
+
+
+
+main {
+    width: 100%;
+    padding: 35px 0 60px;
+}
+
+main > h2 {
+    padding: 0 20px;
+    margin-bottom: 35px;
+    font-size: clamp(28px, 4vw, 42px);
+}
+
+.tartalom {
+    width: min(1200px, 90%);
     margin: 0 auto;
 }
 
+.szakasz {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 45px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 18px;
+}
+
+.szakasz.szoveg-jobbra {
+    flex-direction: row-reverse;
+}
+
+.szakasz-szoveg {
+    flex: 1 1 55%;
+    min-width: 0;
+}
+
+.szakasz h2 {
+    margin: 0 0 20px;
+    color: #c5e8a8;
+    font-size: clamp(26px, 3vw, 36px);
+    line-height: 1.4;
+}
+
+.szakasz p {
+    margin-bottom: 18px;
+}
+
+.szakasz p:last-child {
+    margin-bottom: 0;
+}
+
+
+.szakasz-kep {
+    flex: 1 1 45%;
+    min-width: 0;
+    margin: 0;
+}
+
+.szakasz-kep img {
+    display: block;
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+.szakasz-kep figcaption {
+    margin-top: 10px;
+    color: #d1dfca;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .szakasz, .szakasz.szoveg-jobbra {
+        flex-direction: column;
+    }
+    .szakas-kep {
+        width: 100%;
+    }
+    .szakas-kep img {
+        width: 100%;
+        height: auto;
+    }
+    .szakas-kep figcaption {
+        display: none;
+    }
+}
