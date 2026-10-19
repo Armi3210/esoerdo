@@ -1,10 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Average+Sans&family=Bitcount+Ink:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Viaoda+Libre&display=swap');
 * {
     box-sizing: border-box;
 }
 
 body {
-
-    font-family: "Roboto", sans-serif;
+    font-family: "Viaoda Libre", serif;
     background-color: rgb(6, 44, 6);
 }
 
