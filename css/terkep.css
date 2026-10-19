@@ -5,9 +5,10 @@
 }
 
 body {
-  
     font-family: "Viaoda Libre", serif;
     background-color: rgb(6, 44, 6);
+    color: #fff; 
+    font-size: 20px;
 }
 
 header {
@@ -15,7 +16,7 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    color: #fff;
+    color: #fff; 
     min-height: 650px;
 }
 
@@ -35,3 +36,14 @@ h1 {
 .navbar a:hover {
     color: #ccc;
 }
+
+p img{
+    width: 500px;
+    border-radius: 15px;
+}
+
+.hol-van{
+    width: 85%;
+    margin: 0 auto;
+}
+
