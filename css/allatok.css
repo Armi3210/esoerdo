@@ -4,6 +4,18 @@
     box-sizing: border-box;
 }
 
+
+header {
+   background-image:
+        linear-gradient(rgba(0, 25, 0, 0.35), rgba(0, 25, 0, 0.55)),
+        url("../images/wp12478603-rainforest-4k-wallpapers.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    min-height: 650px;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     background-color: rgb(6, 44, 6);

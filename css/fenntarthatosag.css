@@ -9,7 +9,9 @@ body {
 }
 
 header {
-    background-image: url("../images/wp12478603-rainforest-4k-wallpapers.webp");
+   background-image:
+        linear-gradient(rgba(0, 25, 0, 0.35), rgba(0, 25, 0, 0.55)),
+        url("../images/wp12478603-rainforest-4k-wallpapers.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
