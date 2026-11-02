@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Average+Sans&family=Bitcount+Ink:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Viaoda Libre", serif;
 }
 
 header {
@@ -13,6 +13,8 @@ header {
     background-size: cover;
     color: #fff;
     min-height: 650px;
+    font-size: 20px;
+    line-height: 1.8;
 }
 h1{
     font-size: 80px;

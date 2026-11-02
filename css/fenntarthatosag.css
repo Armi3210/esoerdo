@@ -17,6 +17,8 @@ header {
     background-size: cover;
     color: #fff;
     min-height: 650px;
+    font-size: 20px;
+    line-height: 1.8;
 }
 
 h1 {

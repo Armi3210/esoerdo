@@ -8,6 +8,8 @@ body {
   
     font-family: "Viaoda Libre", serif;
     background-color: rgb(6, 44, 6);
+    font-size: 20px;
+    line-height: 1.8;
 }
 
 header {
