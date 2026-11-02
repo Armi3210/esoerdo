@@ -20,7 +20,26 @@ header {
     background-position: center;
     background-size: cover;
     color: #fff;
-    min-height: 650px;
+    min-height: 600px;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 15px 4%;
+}
+
+.navbar a {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a:focus {
+    color: #b9e6a5;
+}
+
+.navbar .nav-link.active {
+    color: #b9e6a5;
 }
 
 h1 {
@@ -28,17 +47,6 @@ h1 {
     font-size: 80px;
 }
 
-.navbar {
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-.navbar a {
-    color: #fff;
-}
-
-.navbar a:hover {
-    color: #ccc;
-}
 
 .card {
     width: 100%;
