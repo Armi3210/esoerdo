@@ -1,0 +1,1 @@
+https://trello.com/invite/b/6ad5ea45eb4c20fbbaea040d/ATTI1e351945d352383a0584e9939253990e34A38533/esoerdo
