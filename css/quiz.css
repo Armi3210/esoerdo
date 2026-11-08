@@ -2,35 +2,7 @@
 
 
 
-header {
-    background-image:
-        linear-gradient(rgba(0, 25, 0, 0.35), rgba(0, 25, 0, 0.55)),
-        url("../images/wp12478603-rainforest-4k-wallpapers.webp");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: #fff;
-    min-height: 600px;
-}
 
-.navbar {
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 15px 4%;
-}
-
-.navbar a {
-    color: #fff;
-    transition: color 0.3s ease;
-}
-
-.navbar a:hover,
-.navbar a:focus {
-    color: #b9e6a5;
-}
-
-.navbar .nav-link.active {
-    color: #b9e6a5;
-}
 h1{
     font-size: 80px;
 
@@ -102,6 +74,37 @@ body {
 .kviz__score { font-size: 3rem; font-weight: 700; margin: 6px 0 4px; color: var(--k-ink); }
 .kviz [hidden] { display: none !important; }
 @media (prefers-reduced-motion: reduce) { .kviz * { transition: none !important; } }
+
+
+header {
+    background-image:
+        linear-gradient(rgba(0, 25, 0, 0.35), rgba(0, 25, 0, 0.55)),
+        url("../images/wp12478603-rainforest-4k-wallpapers.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    min-height: 600px;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 15px 4%;
+}
+
+.navbar a {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a:focus {
+    color: #b9e6a5;
+}
+
+.navbar .nav-link.active {
+    color: #b9e6a5;
+}
 
 body {
     font-family: "Viaoda Libre", serif; 
