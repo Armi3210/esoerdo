@@ -17,7 +17,6 @@ body {
     line-height: 1.8;
 }
 
-
 header {
     background-image:
         linear-gradient(rgba(0, 25, 0, 0.35), rgba(0, 25, 0, 0.55)),
@@ -57,95 +56,28 @@ header h1 {
     text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.8);
 }
 
-
-
-main {
-    width: 100%;
-    padding: 35px 0 60px;
-}
-
-main > h2 {
-    padding: 0 20px;
-    margin-bottom: 35px;
-    font-size: clamp(28px, 4vw, 42px);
-}
-
-.tartalom {
-    width: min(1200px, 90%);
-    margin: 0 auto;
-}
-
-.szakasz {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    margin-bottom: 45px;
-    padding: 30px;
-    background-color: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 18px;
-}
-
-.szakasz.szoveg-jobbra {
-    flex-direction: row-reverse;
-}
-
-.szakasz-szoveg {
-    flex: 1 1 55%;
-    min-width: 0;
-}
-
-.szakasz h2 {
-    margin: 0 0 20px;
+main h3 {
     color: #c5e8a8;
-    font-size: clamp(26px, 3vw, 36px);
-    line-height: 1.4;
+    font-size: 28px;
 }
 
-.szakasz p {
-    margin-bottom: 18px;
+main p {
+    line-height: 1.7;
 }
 
-.szakasz p:last-child {
-    margin-bottom: 0;
+main hr {
+    border-color: #a4bba1;
 }
 
-
-.szakasz-kep {
-    flex: 1 1 45%;
-    min-width: 0;
-    margin: 0;
-}
-
-.szakasz-kep img {
-    display: block;
+#terkep {
     width: 100%;
-    height: 360px;
-    object-fit: cover;
-    border-radius: 14px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
-}
-
-.szakasz-kep figcaption {
-    margin-top: 10px;
-    color: #d1dfca;
-    font-size: 15px;
-    text-align: center;
-    line-height: 1.5;
+    height: 480px;
+    border: 2px solid #b9d2ae;
+    border-radius: 8px;
 }
 
 @media (max-width: 768px) {
-    .szakasz, .szakasz.szoveg-jobbra {
-        flex-direction: column;
-    }
-    .szakas-kep {
-        width: 100%;
-    }
-    .szakas-kep img {
-        width: 100%;
-        height: auto;
-    }
-    .szakas-kep figcaption {
-        display: none;
+    #terkep {
+        height: 350px;
     }
 }

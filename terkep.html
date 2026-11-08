@@ -36,10 +36,56 @@
     </header>
 
     <main class="container py-5">
-        
+        <h2 class="text-center mb-4">A világ három nagy esőerdővidéke</h2>
+
+        <div class="row g-4 align-items-start">
+            
+            <div class="col-lg-6">
+                <section class="mb-4">
+                    <h3>1. Amazonas-medence</h3>
+                    <p>Az Amazonas esőerdeje Dél-Amerikában található, legnagyobb része Brazíliában helyezkedik el,
+                        de több környező országba is átnyúlik. Ez a világ legnagyobb összefüggő trópusi esőerdője.
+                        Egész évben meleg és csapadékos az éghajlata, ezért rengeteg növény- és állatfaj él itt.
+                        Az erdő fontos szerepet játszik a víz körforgásában és a szén tárolásában. A fakitermelés
+                        és a mezőgazdasági területek terjeszkedése azonban veszélyezteti.</p>
+                </section>
+
+                <hr>
+
+                <section class="my-4">
+                    <h3>2. Kongó-medence</h3>
+                    <p>A Kongó-medence esőerdeje Közép-Afrikában terül el, főként a Kongói Demokratikus Köztársaságban
+                        és a szomszédos országokban. Az Amazonas után ez a második legnagyobb trópusi esőerdővidék.
+                        Hatalmas fái között gorillák, erdei elefántok és sok más különleges állat él.
+                        Az erdő az itt élő emberek megélhetése szempontjából is fontos. A fakitermelés,
+                        a bányászat és az erdőirtás komoly veszélyt jelentenek rá.</p>
+                </section>
+
+                <hr>
+
+                <section class="mt-4">
+                    <h3>3. Délkelet-Ázsia esőerdei</h3>
+                    <p>Délkelet-Ázsiában elsősorban Indonézia, Malajzia és Új-Guinea térségében találunk nagy
+                        kiterjedésű trópusi esőerdőket. A sűrű növényzet sok ritka fajnak ad otthont, például
+                        orángutánoknak és különféle trópusi madaraknak. A meleg, párás időjárás miatt a növények
+                        egész évben növekednek. Ezeket az erdőket különösen a pálmaolaj-termeléshez kapcsolódó
+                        ültetvények terjeszkedése, valamint a fakitermelés veszélyezteti.</p>
+                </section>
+            </div>
+
+           
+            <div class="col-lg-6">
+                <h3 class="mb-3">Esőerdők a térképen</h3>
+                <div id="terkep" aria-label="Interaktív térkép a három nagy esőerdővidékről"></div>
+                <p class="small mt-2 mb-0">A három jelölőre kattintva megjelenik az esőerdő neve.
+                    A pontok hozzávetőleges helyeket mutatnak, nem a teljes erdőterületet.</p>
+            </div>
+        </div>
     </main>
 
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/terkep.js"></script>
 </body>
 
 </html>
