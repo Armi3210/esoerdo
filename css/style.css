@@ -1,90 +1,197 @@
-@import url('https://fonts.googleapis.com/css2?family=Average+Sans&family=Bitcount+Ink:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Viaoda+Libre&display=swap');
-
-* {
-    box-sizing: border-box;
+.hero {
+    min-height: 90vh;
 }
 
-body {
-  
-    font-family: "Viaoda Libre", serif;
-    background-color: #062c06;
-    font-size: 20px;
-    line-height: 1.8;
+.hero h1 {
+    font-size: clamp(3.2rem, 14vw, 7.5rem);
 }
 
-header {
-    background-image:
-        linear-gradient(rgba(0, 25, 0, 0.35), rgba(0, 25, 0, 0.55)),
-        url("../images/wp12478603-rainforest-4k-wallpapers.webp");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: #fff;
-    min-height: 600px;
+.hero-gombok {
+    margin-top: 26px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
 }
 
-.navbar {
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 15px 4%;
+.szamok {
+    position: relative;
+    margin-top: -50px;
+    margin-bottom: 10px;
 }
 
-.navbar a {
-    color: #fff;
-    transition: color 0.3s ease;
+.szam-doboz {
+    height: 100%;
+    padding: 18px 12px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid rgba(185, 230, 165, 0.4);
+    background-color: #295029;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
 }
 
-.navbar a:hover,
-.navbar a:focus {
+.szam {
+    display: block;
+    font-size: clamp(1.8rem, 5vw, 2.6rem);
+    line-height: 1.2;
     color: #b9e6a5;
 }
 
-.navbar .nav-link.active {
-    color: #b9e6a5;
+.szam-leiras {
+    display: block;
+    font-size: 16px;
+    line-height: 1.4;
 }
-
-h1 {
-    padding: 200px 10px 0;
-    font-size: 80px;
-}
-
 
 .card {
-    width: 100%;
     color: #000;
-    background-color: rgb(175, 192, 148);
+    background-color: #afc094;
+    border: 2px solid #ac7510;
+    border-radius: 20px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 24px rgba(0, 0, 0, 0.45);
+}
+
+.card-body {
+    padding: 28px 24px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+}
+
+.card-text {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.emeletek {
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 24px;
+    overflow: hidden;
     border: 2px solid #ac7510;
 }
 
-footer {
-    background-color: #000;
-    width: 100%;
-    min-height: 50px;
+.emelet {
+    padding: 22px 28px;
 }
 
-#carouselExampleControls {
-    max-width: 800px;
-    margin: 30px auto;
+.emelet-1 { background-color: #5a8f3c; }
+.emelet-2 { background-color: #3f7a34; }
+.emelet-3 { background-color: #295029; }
+.emelet-4 { background-color: #14380f; }
+
+.emelet h3 {
+    margin: 0;
+    font-size: 1.5rem;
 }
 
-#carouselExampleControls .carousel-item img {
-    height: 350px;
+.emelet p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.emelet .emelet-magassag {
+    font-size: 15px;
+    color: #b9e6a5;
+    margin-bottom: 4px;
+}
+
+#galeria {
+    max-width: 900px;
+    margin: 20px auto 0;
+    border-radius: 24px;
+    overflow: hidden;
+    border: 3px solid #ac7510;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+}
+
+#galeria .carousel-item img {
+    height: 420px;
     object-fit: cover;
 }
 
+#galeria .carousel-caption {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 40px 20px 14px;
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+}
+
+#galeria .carousel-caption p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.tudtad {
+    height: 100%;
+    padding: 24px;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px dashed #81ad09;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.tudtad p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.tudtad strong {
+    color: #b9e6a5;
+    font-weight: normal;
+}
+
+.link-kartya {
+    display: block;
+    height: 100%;
+    padding: 22px 14px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 20px;
+    border: 2px solid #81ad09;
+    background-color: #295029;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.link-kartya:hover {
+    transform: translateY(-6px);
+    color: #fff;
+    background-color: #3a6b3a;
+}
+
+.link-kartya h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #b9e6a5;
+}
+
+.link-kartya p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
 @media (max-width: 767.98px) {
-    header {
-        min-height: 450px;
+    .hero {
+        min-height: 80vh;
     }
 
-    h1 {
-        padding-top: 80px;
-        font-size: 42px;
+    #galeria .carousel-item img {
+        height: 260px;
     }
 
-    .navbar .navbar-collapse {
-        padding: 10px 0;
-    }
-    .navbar{
-        background-color: #000;
+    .emelet {
+        padding: 20px 18px;
     }
 }

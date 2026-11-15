@@ -7,14 +7,15 @@
     <title>Esőerdő</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
+    <header class="hero">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Esőerdők</a>
+                <a class="navbar-brand" href="index.html">Esőerdők</a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Navigáció megnyitása">
@@ -43,20 +44,60 @@
             </div>
         </nav>
 
-        <h1 class="text-center">Esőerdők</h1>
+        <h1>Esőerdők</h1>
+        <p class="alcim">Fedezd fel a Föld egyik legsokszínűbb élőhelyét: különleges állatok, hatalmas fák és
+            rengeteg érdekesség.</p>
+
+        <div class="hero-gombok">
+            <a href="allatok.html" class="btn btn-success btn-lg">Állatok felfedezése</a>
+            <a href="#ismerd-meg" class="btn btn-outline-light btn-lg">Tudj meg többet ↓</a>
+        </div>
     </header>
 
     <main>
-        <section class="container py-3">
+        <section class="container szamok">
             <div class="row g-3">
+                <div class="col-6 col-lg-3">
+                    <div class="szam-doboz">
+                        <span class="szam">~6%</span>
+                        <span class="szam-leiras">a szárazföldek felszínéből esőerdő</span>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="szam-doboz">
+                        <span class="szam">50%+</span>
+                        <span class="szam-leiras">a Föld élőlényfajainak itt él (becslés)</span>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="szam-doboz">
+                        <span class="szam">3</span>
+                        <span class="szam-leiras">nagy esőerdővidék a világon</span>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="szam-doboz">
+                        <span class="szam">2000 mm+</span>
+                        <span class="szam-leiras">csapadék évente</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container szekcio" id="ismerd-meg">
+            <h2 class="szekcio-cim">Ismerd meg az esőerdőt</h2>
+            <p class="szekcio-leiras">Három kérdés, amivel érdemes kezdeni.</p>
+
+            <div class="row g-4">
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card h-100">
                         <div class="card-body">
                             <h4 class="card-title">Mi az esőerdő?</h4>
                             <p class="card-text">
                                 Az esőerdők meleg, csapadékos területek, amelyek gazdag élővilágnak adnak otthont.
+                                Egész évben meleg van, és gyakran esik az eső.
                             </p>
-                            <a href="#" class="btn btn-success">Tudj meg többet</a>
+                            <a href="terkep.html" class="btn btn-success">Tudj meg többet</a>
                         </div>
                     </div>
                 </div>
@@ -67,9 +108,9 @@
                             <h4 class="card-title">Hogyan befolyásolja életünket?</h4>
                             <p class="card-text">
                                 Az esőerdők fontos szerepet játszanak a bolygó éghajlatának és élővilágának
-                                fenntartásában.
+                                fenntartásában. Megkötik a szén-dioxidot, és részt vesznek a víz körforgásában.
                             </p>
-                            <a href="#" class="btn btn-success">Tudj meg többet</a>
+                            <a href="fenntarthatosag.html" class="btn btn-success">Tudj meg többet</a>
                         </div>
                     </div>
                 </div>
@@ -79,51 +120,162 @@
                         <div class="card-body">
                             <h4 class="card-title">Miért fontos téma?</h4>
                             <p class="card-text">
-                                Az esőerdők védelme segít megőrizni a természet sokféleségét.
+                                Az esőerdők védelme segít megőrizni a természet sokféleségét. Ha eltűnnek az erdők,
+                                rengeteg állat- és növényfaj is eltűnhet velük együtt.
                             </p>
-                            <a href="#" class="btn btn-success">Tudj meg többet</a>
+                            <a href="allatok.html" class="btn btn-success">Tudj meg többet</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section>
-            <section class="container-fluid p-0">
-                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="images/vlad-hilitanu-pt7QzB4ZLWw-unsplash.jpg" class="d-block w-100"
-                                alt="Trópusi esőerdő">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/wp12478603-rainforest-4k-wallpapers.webp" class="d-block w-100"
-                                alt="Zöld esőerdő">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/vlad-hilitanu-pt7QzB4ZLWw-unsplash.jpg" class="d-block w-100"
-                                alt="Sűrű trópusi erdő">
-                        </div>
+        <section class="container szekcio">
+            <h2 class="szekcio-cim">Az esőerdő négy emelete</h2>
+            <p class="szekcio-leiras">Az esőerdő olyan, mint egy többemeletes ház: minden szinten más állatok
+                laknak.</p>
+
+            <div class="emeletek">
+                <div class="emelet emelet-1">
+                    <div>
+                        <h3>Kiemelkedő fák</h3>
+                        <p class="emelet-magassag">kb. 45 métertől felfelé</p>
+                        <p>A legmagasabb fák koronái. Itt süt a legtöbb nap és itt fúj a legtöbb szél.</p>
                     </div>
-                    
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                        data-bs-slide="prev">
-
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-
-                        <span class="visually-hidden">Előző</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                        data-bs-slide="next">
-
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-
-                        <span class="visually-hidden">Következő</span>
-                    </button>
                 </div>
-            </section>
+                <div class="emelet emelet-2">
+                    <div>
+                        <h3>Lombkoronaszint</h3>
+                        <p class="emelet-magassag">kb. 20-40 méter</p>
+                        <p>Sűrű zöld tető. Az állatok nagy része itt él: majmok, tukánok, lajhárok.</p>
+                    </div>
+                </div>
+                <div class="emelet emelet-3">
+                    <div>
+                        <h3>Aljnövényzet</h3>
+                        <p class="emelet-magassag">kb. 5-20 méter</p>
+                        <p>Félhomály, kevés fény. Itt bújnak meg a ragadozók és a színes békák.</p>
+                    </div>
+                </div>
+                <div class="emelet emelet-4">
+                    <div>
+                        <h3>Erdőtalaj</h3>
+                        <p class="emelet-magassag">a föld szintje</p>
+                        <p>Sötét és nedves. A lehullott levelek itt gyorsan lebomlanak.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
+        <section class="container szekcio">
+            <h2 class="szekcio-cim">Képek az esőerdőből</h2>
+
+            <div id="galeria" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#galeria" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="1. kép"></button>
+                    <button type="button" data-bs-target="#galeria" data-bs-slide-to="1" aria-label="2. kép"></button>
+                    <button type="button" data-bs-target="#galeria" data-bs-slide-to="2" aria-label="3. kép"></button>
+                    <button type="button" data-bs-target="#galeria" data-bs-slide-to="3" aria-label="4. kép"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/vlad-hilitanu-pt7QzB4ZLWw-unsplash.jpg" class="d-block w-100"
+                            alt="Trópusi esőerdő">
+                        <div class="carousel-caption">
+                            <p>Az esőerdő madártávlatból</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/kodos.jpg" class="d-block w-100" alt="Köd az esőerdő fölött"
+                            loading="lazy">
+                        <div class="carousel-caption">
+                            <p>Reggeli köd a lombkorona fölött</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/brasil.webp" class="d-block w-100" alt="Folyó az esőerdőben"
+                            loading="lazy">
+                        <div class="carousel-caption">
+                            <p>Kanyargó folyó a zöld tengerben</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/rain-forest-chimp.avif" class="d-block w-100"
+                            alt="Mosolygó majom a vízparton" loading="lazy">
+                        <div class="carousel-caption">
+                            <p>Mosolygó majom a vízparton</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#galeria" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Előző</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#galeria" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Következő</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="container szekcio">
+            <h2 class="szekcio-cim">Tudtad?</h2>
+            <p class="szekcio-leiras">Pár érdekesség az esőerdő lakóiról.</p>
+
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <div class="tudtad">
+                        <p>A lajhár naponta akár <strong>15-20 órát</strong> is alszik.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="tudtad">
+                        <p>A tukán csőre hatalmas, mégis <strong>meglepően könnyű</strong>, mert belül méhsejt-szerkezetű.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="tudtad">
+                        <p>A kapibara a világ <strong>legnagyobb rágcsálója</strong>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container szekcio">
+            <h2 class="szekcio-cim">Merre tovább?</h2>
+            <p class="szekcio-leiras">Válassz egy oldalt, és fedezd fel tovább az esőerdőt!</p>
+
+            <div class="row g-4">
+                <div class="col-6 col-lg-3">
+                    <a href="allatok.html" class="link-kartya">
+                        <h3>Állatok</h3>
+                        <p>Ismerd meg az erdő lakóit</p>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <a href="terkep.html" class="link-kartya">
+                        <h3>Térkép</h3>
+                        <p>Hol vannak az esőerdők?</p>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <a href="fenntarthatosag.html" class="link-kartya">
+                        <h3>Fenntarthatóság</h3>
+                        <p>Mit tehetünk értük?</p>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <a href="quiz.html" class="link-kartya">
+                        <h3>Quiz</h3>
+                        <p>Mennyit tudsz az esőerdőről?</p>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>

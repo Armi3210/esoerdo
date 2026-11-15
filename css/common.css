@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    font-family: "Viaoda Libre", serif;
+    background-color: #062c06;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(8px);
+    padding: 12px 4%;
+}
+
+.navbar-brand {
+    font-size: 1.6rem;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 18px;
+    padding: 6px 16px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus {
+    color: #b9e6a5;
+    background-color: rgba(185, 230, 165, 0.15);
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: #062c06;
+    background-color: #b9e6a5;
+}
+
+header {
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 16px 50px;
+    text-align: center;
+    color: #fff;
+    background-image:
+        linear-gradient(rgba(0, 25, 0, 0.35), rgba(0, 25, 0, 0.65)),
+        url("../images/wp12478603-rainforest-4k-wallpapers.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0 0 40px 40px;
+}
+
+header h1 {
+    font-size: clamp(2.4rem, 8vw, 4.5rem);
+    line-height: 1.15;
+    margin: 0 0 10px;
+    text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.8);
+}
+
+.alcim {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: clamp(1.1rem, 3vw, 1.5rem);
+    line-height: 1.5;
+    color: #e3f5d8;
+    text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.szekcio {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.szekcio-cim {
+    text-align: center;
+    font-size: clamp(1.8rem, 5vw, 2.6rem);
+    line-height: 1.3;
+    color: #b9e6a5;
+    margin-bottom: 8px;
+}
+
+.szekcio-cim::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    margin: 12px auto 0;
+    border-radius: 4px;
+    background-color: #ac7510;
+}
+
+.szekcio-leiras {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    text-align: center;
+    color: #d8ecd0;
+}
+
+.btn {
+    font-size: 18px;
+    padding: 8px 26px;
+    border-radius: 50px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+.btn-success {
+    color: #062c06;
+    background-color: #0cb946;
+    border-color: #0cb946;
+}
+
+.btn-success:hover,
+.btn-success:active,
+.btn-success:focus {
+    color: #062c06;
+    background-color: #b9e6a5;
+    border-color: #b9e6a5;
+}
+
+footer {
+    background-color: #000;
+    border-top: 3px solid #ac7510;
+    padding: 24px 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px 32px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+@media (max-width: 991.98px) {
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.88);
+    }
+
+    .navbar .navbar-collapse {
+        padding: 10px 0;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        margin: 2px 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+    body {
+        font-size: 18px;
+    }
+
+    header {
+        min-height: 280px;
+        padding-top: 90px;
+        border-radius: 0 0 28px 28px;
+    }
+
+    .szekcio {
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    * {
+        transition: none !important;
+    }
+}
