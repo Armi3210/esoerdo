@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Állatok</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/allatok.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Esőerdők</a>
+                <a class="navbar-brand" href="index.html">Esőerdők</a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Navigáció megnyitása">
@@ -23,13 +24,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="index.html">Főoldal</a>
+                            <a class="nav-link" href="index.html">Főoldal</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="quiz.html">Quiz</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="allatok.html">Állatok</a>
+                            <a class="nav-link active" href="allatok.html">Állatok</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="fenntarthatosag.html">Fenntarthatóság</a>
@@ -41,157 +42,252 @@
                 </div>
             </div>
         </nav>
+
+        <h1>Az esőerdő állatai</h1>
+        <p class="alcim">Színes békák, hangos papagájok és lassú lajhárok: ismerd meg az erdő lakóit!</p>
     </header>
+
     <main>
-        <section>
-            <h2>Bevezetés</h2>
-            <p>Az esőerdőkben rengetek különös álllatfaj megtalálható, ez a z oldal bemutat néhányat a legújabb
-                felfedezésekből</p>
+        <section class="container szekcio bevezetes">
+            <h2 class="szekcio-cim">Bevezetés</h2>
+            <p class="szekcio-leiras">Az esőerdőkben rengeteg különös állatfaj megtalálható, ez az oldal bemutat
+                néhányat közülük. Kattints a <strong>Tovább</strong> feliratra a kártyákon, ha többet szeretnél
+                tudni!</p>
+
+            <div class="row g-3 justify-content-center">
+                <div class="col-4 col-md-3">
+                    <div class="mini-szam"><span>10</span> faj</div>
+                </div>
+                <div class="col-4 col-md-3">
+                    <div class="mini-szam"><span>5</span> állatcsoport</div>
+                </div>
+                <div class="col-4 col-md-3">
+                    <div class="mini-szam"><span>1</span> közös otthon</div>
+                </div>
+            </div>
         </section>
 
-        <section class="p-4">
-            <div class="row g-4">
-                <div class="col-12 col-lg-6">
-                    <div class="allatkartya d-flex flex-row flex-column flex-md-row gap-4 align-items-center">
-                        <img src="images/allatkepek/zoldbeka.webp" alt="zoldbeka">
-                        <div>
-                            <h3 class="pb-3 text-center">Beka</h3>
-                            <p class="text-justify">
+        <section class="container szekcio kiemelt-szekcio">
+            <h2 class="szekcio-cim">Kiemelt állat</h2>
+
+            <div class="kiemelt">
+                <div class="row g-0 align-items-stretch">
+                    <div class="col-12 col-lg-6">
+                        <img src="images/allatkepek/beka.webp" alt="Kék nyílméregbéka egy mohos fatörzsön">
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="kiemelt-szoveg">
+                            <h3>Nyílméregbéka</h3>
+                            <p>
                                 A trópusi esőerdők aljnövényzetének egyik legszínesebb és leglenyűgözőbb lakója a
                                 nyílméregbéka. Bár mérete csupán néhány centiméter, élénk kék, sárga vagy piros
-                                színei
-                                messziről hirdetik a ragadozóknak a mérgező voltát, amelyet a természetben
-                                elfogyasztott
-                                hangyákból és rovarokból nyernek. Az őslakos törzsek évszázadok óta használták ezen
-                                állatok
-                                bőrén található mérget a vadászathoz használt nyilaik hegyének bevonására.
+                                színei messziről hirdetik a ragadozóknak a mérgező voltát, amelyet a természetben
+                                elfogyasztott hangyákból és rovarokból nyernek. Az őslakos törzsek évszázadok óta
+                                használták ezen állatok bőrén található mérget a vadászathoz használt nyilaik
+                                hegyének bevonására.
                             </p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-6">
-                    <div class="allatkartya d-flex flex-row flex-column flex-md-row gap-4 align-items-center">
-                        <img src="images/allatkepek/papagaj.webp" alt="papagaj" title="papagaj">
-                        <div>
-                            <h3 class="pb-3 text-center">Arara ara (Arapapagáj)</h3>
-                            <p class="text-justify">
-                                Az esőerdők lombkoronaszintjének egyik leglátványosabb és leghangosabb képviselője az arapapagáj. Hatalmas, élénkpiros, kék és sárga tollazata, valamint tekintélyes mérete miatt azonnal magára vonja a figyelmet. Rendkívül intelligens és társasági lény, amely élethosszig tartó párkapcsozatban él, és hangos rikácsolásával betölti a dzsungel levegőjét, miközben erős csőrével kemény dióféléket és magvakat roppant össze.
-                            </p>
+                            <ul class="tenyek">
+                                <li>Mérete: néhány centiméter</li>
+                                <li>Élőhelye: az aljnövényzet</li>
+                                <li>Színei: kék, sárga vagy piros</li>
+                                <li>Különlegessége: mérgező bőr</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-12 col-lg-6">
-                    <div class="allatkartya d-flex flex-row flex-column flex-md-row gap-4 align-items-center">
-                        <img src="images/allatkepek/lajhar.webp" alt="lajhar" title="lajhar">
-                        <div>
-                            <h3 class="pb-3 text-center">Lajhár</h3>
-                            <p class="text-justify">
-                                A lajhár az esőerdők leglassabb, mégis egyik legkedveltebb emlőse, amely szinte egész életét a fák ágain lógva tölti. Testhőmérséklete a környezet függvényében változik, energiatakarékos életmódja miatt pedig naponta akár 15-20 órát is alvással tölt. Zöldes árnyalatú bundáját mikroszkopikus algafajok népesítik be, ami tökéletes rejtő színt biztosít számára a lombok sűrűjében a ragadozók elől.ra.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-12 col-lg-6">
-                    <div class="allatkartya d-flex flex-row flex-column flex-md-row gap-4 align-items-center">
-                        <img src="images/allatkepek/ocelotjo.png" alt="Ocelot">
-                        <div>
-                            <h3 class="pb-3 text-center">Ocelot</h3>
-                            <p class="text-justify">
-                                A dél-amerikai esőerdők csúcsragadozója a fenséges Ocelot, amely a macskafélék közül harmadikként a legnagyobb termetű a világon. Kiválóan úszik, és nem ritka, hogy a folyók vizéből halakra vagy kajmánokra vadászik, de sűrű foltos bundája tökéletes álcázást biztosít az aljnövényzet fény-árnyék játékában. Rejtőzködő életmódja és magányos természete miatt rendkívül ritkán látható a vadonban, így az esőerdő egészségének egyik legfontosabb jelzője.
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-6">
-                    <div class="allatkartya d-flex flex-row flex-column flex-md-row gap-4 align-items-center">
-                        <img src="images/allatkepek/tukan.webp" alt="Tukán" title="Tukán">
-                        <div>
-                            <h3 class="pb-3 text-center">Tukán</h3>
-                            <p class="text-justify">
-                               A tukán a trópusi erdők jellegzetes madara, amelyet elsősorban hatalmas, színes és könnyű csőréről lehet felismerni. Bár a csőre hatalmasnak tűnik, méhsejt-szerkezetű belső szerkezete miatt meglepően könnyű, és kiválóan alkalmas a magas ágakon lévő gyümölcsök elérésére. Társas madárként kis csoportokban mozog a lombkoronaszintben, és fontos szerepet játszik a magvak szétszórásában és az erdő megújulásában.
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-6">
-                    <div class="allatkartya d-flex flex-row flex-column flex-md-row gap-4 align-items-center">
-                        <img src="images/allatkepek/maom.webp" alt="Majom" title="Majom">
-                        <div>
-                            <h3 class="pb-3 text-center">Majom</h3>
-                            <p class="text-justify">
-                                A majmok – például a pókhajak vagy bőgőmajmok – az esőerdők legmozgékonyabb lakói, amelyek behálőzik a felső lombkoronaszintet. Hosszú, kapaszkodó farkuk szinte ötödik kézként funkcionál, amellyel magabiztosan lendülnek ágról ágra a legmagasabb fák között is. Hangos kiáltásaik kilométerekre elhallatszanak a dzsungelben, és fontos közösségi életet élnek összetett családi csoportokban.
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-6">
-                    <div class="allatkartya d-flex flex-row flex-column flex-md-row gap-4 align-items-center">
-                        <img src="images/allatkepek/kigyo.webp" alt="boa" title="boa">
-                        <div>
-                            <h3 class="pb-3 text-center">Smaragd boa</h3>
-                            <p class="text-justify">
-                                A smaragd boa egy ragyogó zöld színű, fán lakó kígyófaj, amely lenyűgöző megjelenésével és fehér, geometriai mintázatával tökéletesen beleolvad az orchideák és levelek világába. Éjszakai ragadozóként nappal szorosan összetekeredve pihen egy vastag ágon, majd sötétedés után hőérzékelő szerveivel kutat kisemlősök és madarak után, amelyeket hatalmas szorítóerejével ejt el.
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-6">
-                    <div class="allatkartya d-flex flex-row flex-column flex-md-row gap-4 align-items-center">
-                        <img src="images/allatkepek/lepke.webp" alt="Kék morpho pillangó" title="Kék morpho pillangó">
-                        <div>
-                            <h3 class="pb-3 text-center">Kék morpho pillangó</h3>
-                            <p class="text-justify">
-                                A kék morpho pillangó az esőerdők egyik legkáprázatosabb rovara, amelynek szárnyai felül intenzív, fémes kék színben ragyognak, míg alul barna, szemet formáló mintákkal védekeznek a ragadozók ellen. Amikor repülés közben csapkod a szárnyaival, a fény villanásszerűen megcsillan a felületén, megzavarva ezzel a madarakat és más támadókat. Hernyó korában mérgező növényekkel táplálkozik, így maga is kellemetlen ízűvé válik a ragadozók számára.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-6">
-                    <div class="allatkartya d-flex flex-row flex-column flex-md-row gap-4 align-items-center">
-                        <img src="images/allatkepek/zoldbeka.webp" alt="Pirosszemű levelibéka" title="Pirosszemű levelibéka">
-                        <div>
-                            <h3 class="pb-3 text-center">Pirosszemű levelibéka</h3>
-                            <p class="text-justify">
-                                Ez a jellegzetes kétéltű a trópusi esőerdők éjszakai életének egyik legikonikusabb figurája, amelyet élénkpiros szemeiről és neon-zöld bőréről lehet felismerni. Nagy, vörös szemei hirtelen kinyitva elijesztik vagy összezavarják a rátámadó rovarevőket. Tapadókorongos lábain némán és biztosan mozog a nedves levelek hátoldalán, ahol napközben szinte láthatatlanul pihen.
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-6">
-                    <div class="allatkartya d-flex flex-row flex-column flex-md-row gap-4 align-items-center">
-                        <img src="images/allatkepek/kapibara.webp" alt="Kapibara" title="Kapibara">
-                        <div>
-                            <h3 class="pb-3 text-center">Kapibara</h3>
-                            <p class="text-justify">
-                                A kapibara a világ legnagyobb rágcsálója, amely az esőerdők folyópartjain, mocsaras területein és árterein él. Kiváló úszó és búvár, amely veszély esetén a víz alá merülve rejtőzik el, úszóhártyás lábai pedig segítik a hatékony haladásban. Barátságos és békeszerető természetéről ismert, gyakran látható, amint békésen legel a vízparti növényzeten más állatok társaságában.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            </div>
         </section>
 
+        <section class="container szekcio">
+            <h2 class="szekcio-cim">További lakók</h2>
+            <p class="szekcio-leiras">Kilenc állat az esőerdő minden emeletéről.</p>
+
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="allatkartya">
+                        <img src="images/allatkepek/papagaj.webp" alt="Arapapagáj" title="Arapapagáj">
+                        <div class="allat-szoveg">
+                            <h3>Arara ara (Arapapagáj)</h3>
+                            <p>Az esőerdők lombkoronaszintjének egyik leglátványosabb és leghangosabb képviselője az
+                                arapapagáj.</p>
+                            <details>
+                                <summary>Tovább</summary>
+                                <p>Hatalmas, élénkpiros, kék és sárga tollazata, valamint tekintélyes mérete miatt
+                                    azonnal magára vonja a figyelmet. Rendkívül intelligens és társasági lény, amely
+                                    élethosszig tartó párkapcsolatban él, és hangos rikácsolásával betölti a dzsungel
+                                    levegőjét, miközben erős csőrével kemény dióféléket és magvakat roppant össze.</p>
+                            </details>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="allatkartya">
+                        <img src="images/allatkepek/lajhar.webp" alt="Lajhár" title="Lajhár">
+                        <div class="allat-szoveg">
+                            <h3>Lajhár</h3>
+                            <p>A lajhár az esőerdők leglassabb, mégis egyik legkedveltebb emlőse, amely szinte egész
+                                életét a fák ágain lógva tölti.</p>
+                            <details>
+                                <summary>Tovább</summary>
+                                <p>Testhőmérséklete a környezet függvényében változik, energiatakarékos életmódja
+                                    miatt pedig naponta akár 15-20 órát is alvással tölt. Zöldes árnyalatú bundáját
+                                    mikroszkopikus algafajok népesítik be, ami tökéletes rejtő színt biztosít számára
+                                    a lombok sűrűjében a ragadozók elől.</p>
+                            </details>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="allatkartya">
+                        <img src="images/allatkepek/ocelotjo.png" alt="Ocelot" title="Ocelot">
+                        <div class="allat-szoveg">
+                            <h3>Ocelot</h3>
+                            <p>A dél-amerikai esőerdők csúcsragadozója a fenséges Ocelot, amely a macskafélék közül
+                                harmadikként a legnagyobb termetű a világon.</p>
+                            <details>
+                                <summary>Tovább</summary>
+                                <p>Kiválóan úszik, és nem ritka, hogy a folyók vizéből halakra vagy kajmánokra
+                                    vadászik, de sűrű foltos bundája tökéletes álcázást biztosít az aljnövényzet
+                                    fény-árnyék játékában. Rejtőzködő életmódja és magányos természete miatt
+                                    rendkívül ritkán látható a vadonban, így az esőerdő egészségének egyik
+                                    legfontosabb jelzője.</p>
+                            </details>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="allatkartya">
+                        <img src="images/allatkepek/tukan.webp" alt="Tukán" title="Tukán">
+                        <div class="allat-szoveg">
+                            <h3>Tukán</h3>
+                            <p>A tukán a trópusi erdők jellegzetes madara, amelyet elsősorban hatalmas, színes és
+                                könnyű csőréről lehet felismerni.</p>
+                            <details>
+                                <summary>Tovább</summary>
+                                <p>Bár a csőre hatalmasnak tűnik, méhsejt-szerkezetű belső szerkezete miatt meglepően
+                                    könnyű, és kiválóan alkalmas a magas ágakon lévő gyümölcsök elérésére. Társas
+                                    madárként kis csoportokban mozog a lombkoronaszintben, és fontos szerepet játszik
+                                    a magvak szétszórásában és az erdő megújulásában.</p>
+                            </details>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="allatkartya">
+                        <img src="images/allatkepek/maom.webp" alt="Majom" title="Majom">
+                        <div class="allat-szoveg">
+                            <h3>Majom</h3>
+                            <p>A majmok – például a pókmajmok vagy bőgőmajmok – az esőerdők legmozgékonyabb lakói,
+                                amelyek behálózzák a felső lombkoronaszintet.</p>
+                            <details>
+                                <summary>Tovább</summary>
+                                <p>Hosszú, kapaszkodó farkuk szinte ötödik kézként funkcionál, amellyel magabiztosan
+                                    lendülnek ágról ágra a legmagasabb fák között is. Hangos kiáltásaik kilométerekre
+                                    elhallatszanak a dzsungelben, és fontos közösségi életet élnek összetett családi
+                                    csoportokban.</p>
+                            </details>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="allatkartya">
+                        <img src="images/allatkepek/kigyo.webp" alt="Smaragd boa" title="Smaragd boa">
+                        <div class="allat-szoveg">
+                            <h3>Smaragd boa</h3>
+                            <p>A smaragd boa egy ragyogó zöld színű, fán lakó kígyófaj, amely lenyűgöző
+                                megjelenésével és fehér, geometriai mintázatával tökéletesen beleolvad az orchideák
+                                és levelek világába.</p>
+                            <details>
+                                <summary>Tovább</summary>
+                                <p>Éjszakai ragadozóként nappal szorosan összetekeredve pihen egy vastag ágon, majd
+                                    sötétedés után hőérzékelő szerveivel kutat kisemlősök és madarak után, amelyeket
+                                    hatalmas szorítóerejével ejt el.</p>
+                            </details>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="allatkartya">
+                        <img src="images/allatkepek/lepke.webp" alt="Kék morpho pillangó" title="Kék morpho pillangó">
+                        <div class="allat-szoveg">
+                            <h3>Kék morpho pillangó</h3>
+                            <p>A kék morpho pillangó az esőerdők egyik legkáprázatosabb rovara, amelynek szárnyai
+                                felül intenzív, fémes kék színben ragyognak, míg alul barna, szemet formáló mintákkal
+                                védekeznek a ragadozók ellen.</p>
+                            <details>
+                                <summary>Tovább</summary>
+                                <p>Amikor repülés közben csapkod a szárnyaival, a fény villanásszerűen megcsillan a
+                                    felületén, megzavarva ezzel a madarakat és más támadókat. Hernyó korában mérgező
+                                    növényekkel táplálkozik, így maga is kellemetlen ízűvé válik a ragadozók
+                                    számára.</p>
+                            </details>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="allatkartya">
+                        <img src="images/allatkepek/zoldbeka.webp" alt="Pirosszemű levelibéka"
+                            title="Pirosszemű levelibéka">
+                        <div class="allat-szoveg">
+                            <h3>Pirosszemű levelibéka</h3>
+                            <p>Ez a jellegzetes kétéltű a trópusi esőerdők éjszakai életének egyik legikonikusabb
+                                figurája, amelyet élénkpiros szemeiről és neon-zöld bőréről lehet felismerni.</p>
+                            <details>
+                                <summary>Tovább</summary>
+                                <p>Nagy, vörös szemei hirtelen kinyitva elijesztik vagy összezavarják a rátámadó
+                                    rovarevőket. Tapadókorongos lábain némán és biztosan mozog a nedves levelek
+                                    hátoldalán, ahol napközben szinte láthatatlanul pihen.</p>
+                            </details>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="allatkartya">
+                        <img src="images/allatkepek/kapibara.webp" alt="Kapibara" title="Kapibara">
+                        <div class="allat-szoveg">
+                            <h3>Kapibara</h3>
+                            <p>A kapibara a világ legnagyobb rágcsálója, amely az esőerdők folyópartjain, mocsaras
+                                területein és árterein él.</p>
+                            <details>
+                                <summary>Tovább</summary>
+                                <p>Kiváló úszó és búvár, amely veszély esetén a víz alá merülve rejtőzik el,
+                                    úszóhártyás lábai pedig segítik a hatékony haladásban. Barátságos és
+                                    békeszerető természetéről ismert, gyakran látható, amint békésen legel a
+                                    vízparti növényzeten más állatok társaságában.</p>
+                            </details>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="container szekcio">
+            <div class="vedd-meg">
+                <h2>Védjük meg őket!</h2>
+                <p>Ezek az állatok az esőerdőtől függenek. Nézd meg, mit tehetünk értük, vagy próbáld ki, mennyit
+                    jegyeztél meg!</p>
+                <div class="gombok">
+                    <a href="fenntarthatosag.html" class="btn btn-success btn-lg">Mit tehetünk?</a>
+                    <a href="quiz.html" class="btn btn-outline-light btn-lg">Kvíz indítása</a>
+                </div>
+            </div>
+        </section>
     </main>
+
     <footer>
-        <p class="text-center text-white">Kovács Armand </p>
-        <p class="text-center text-white">Horváth Márk </p>
+        <p class="text-center text-white">Kovács Armand</p>
+        <p class="text-center text-white">Horváth Márk</p>
         <p class="text-center text-white m-0">Minden jog fenntartva! 2026</p>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

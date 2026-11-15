@@ -1,72 +1,156 @@
-@import url('https://fonts.googleapis.com/css2?family=Average+Sans&family=Bitcount+Ink:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Viaoda+Libre&display=swap');
-
-* {
-    box-sizing: border-box;
-    font-size: 20px;
-    line-height: 1.8;
+.mini-szam {
+    padding: 14px 6px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.3;
+    border-radius: 20px;
+    background-color: #295029;
+    border: 1px solid rgba(185, 230, 165, 0.4);
 }
 
-
-header {
-    background-image:
-        linear-gradient(rgba(0, 25, 0, 0.35), rgba(0, 25, 0, 0.55)),
-        url("../images/wp12478603-rainforest-4k-wallpapers.webp");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: #fff;
-    min-height: 600px;
-}
-
-.navbar {
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 15px 4%;
-}
-
-.navbar a {
-    color: #fff;
-    transition: color 0.3s ease;
-}
-
-.navbar a:hover,
-.navbar a:focus {
+.mini-szam span {
+    display: block;
+    font-size: 2.2rem;
+    line-height: 1.2;
     color: #b9e6a5;
 }
 
-.navbar .nav-link.active {
+.kiemelt {
+    overflow: hidden;
+    margin-top: 20px;
+    border-radius: 24px;
+    border: 2px solid #81ad09;
+    background-color: #295029;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+}
+
+.kiemelt img {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    max-height: 520px;
+    object-fit: cover;
+    display: block;
+}
+
+.kiemelt-szoveg {
+    padding: 28px;
+}
+
+.kiemelt-szoveg h3 {
+    font-size: 2rem;
     color: #b9e6a5;
 }
 
-body {
-    font-family: "Viaoda Libre", serif;
-    background-color: rgb(6, 44, 6);
-    color: #fff;
+.kiemelt-szoveg p {
+    font-size: 18px;
+    line-height: 1.7;
 }
 
-.allatkartya img {
-    height: 250px;
-    border-radius: 15px;
-}
-
-.allatkartya p {
-    text-align: justify;
+.tenyek {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
 }
 
 .allatkartya {
-    padding: 10px;
-    border: 2px solid rgb(129, 173, 9);
-    border-radius: 15px;
-    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 2px solid #81ad09;
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-@media (max-width: 600px) {
-    .allatkartya img {
-        display: block;
-        margin: auto;
-    }
+.allatkartya:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 24px rgba(0, 0, 0, 0.45);
 }
-footer {
-    background-color: #000;
+
+.allatkartya img {
     width: 100%;
-    min-height: 50px;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    background-image: linear-gradient(135deg, #295029, #35a55c);
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+
+.allat-szoveg {
+    flex-grow: 1;
+    padding: 18px 20px 20px;
+}
+
+.allat-szoveg h3 {
+    font-size: 1.5rem;
+    color: #b9e6a5;
+}
+
+.allat-szoveg p {
+    font-size: 17px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.allat-szoveg details {
+    margin-top: 10px;
+}
+
+.allat-szoveg summary {
+    display: inline-block;
+    padding: 2px 18px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 2px solid #b9e6a5;
+    color: #b9e6a5;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.allat-szoveg summary:hover {
+    background-color: #b9e6a5;
+    color: #062c06;
+}
+
+.allat-szoveg details[open] summary {
+    margin-bottom: 10px;
+}
+
+.vedd-meg {
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 24px;
+    border: 2px solid #ac7510;
+    background-color: #295029;
+}
+
+.vedd-meg h2 {
+    color: #b9e6a5;
+}
+
+.vedd-meg p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.vedd-meg .gombok {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+}
+
+@media (max-width: 575.98px) {
+    .kiemelt-szoveg {
+        padding: 20px;
+    }
+
+    .allat-szoveg p {
+        text-align: left;
+    }
 }
